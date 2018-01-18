@@ -15,10 +15,10 @@ const PATHS = {
 
 const common = merge([
     {
-        entry : PATHS.source,
+        entry : PATHS.source + '/assets',
         output: {
             path: PATHS.build,
-            filename: 'js/[name].js'
+            filename: 'bundle.js'
         }
     },
     html(PATHS.source),
@@ -39,7 +39,7 @@ module.exports = function (env) {
         return merge([
             common,
             devServer(),
-            sassDev(PATHS.source)
+            sassDev(PATHS.sourc)
         ])
     }
 };

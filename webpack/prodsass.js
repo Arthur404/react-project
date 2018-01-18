@@ -14,7 +14,7 @@ module.exports = function (path) {
             }]
         },
         plugins: [
-            new ExtractTextPlugin({filename: 'css/[name].css', allChunks: true}),
+            new ExtractTextPlugin({filename: 'bundle.css', allChunks: true}),
         ]
     }
 };
