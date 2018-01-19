@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --env dev",
+    "start": "webpack-dev-server --env dev",
     "build": "webpack --env prod"
   },
   "devDependencies": {
@@ -32,6 +32,7 @@
     "bootstrap": "4.0.0-alpha.6",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2"
   }
 }

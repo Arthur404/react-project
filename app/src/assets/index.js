@@ -1,15 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './style/main.scss'
-
-const dell = () => {
-    return "Hello"
-}
-
-console.log(dell)
+import App from './js/App';
 
 ReactDOM.render(
-    <h1>Hello</h1>,
+    <App/>,
     document.getElementById('root')
 )

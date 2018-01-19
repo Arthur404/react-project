@@ -9,8 +9,8 @@ const uglifyJS = require('./webpack/uglify');
 const assets = require('./webpack/images');
 
 const PATHS = {
-    source: path.join(__dirname, 'app/src'),
-    build: path.join(__dirname, 'app/build'),
+    source: path.resolve(__dirname, 'app/src'),
+    build: path.resolve(__dirname, 'app/build'),
 };
 
 const common = merge([

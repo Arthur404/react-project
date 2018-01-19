@@ -1,0 +1,98 @@
+@import "../../../style/var";
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px 0;
+  color: white;
+
+  .logo {
+    margin: 0;
+    width: 213px;
+    height: 66px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .nav-btn {
+    width: 30px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: white;
+    z-index: 10;
+
+    &:focus {
+      outline: none;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,.9);
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    &.active {
+      transform: translateY(0);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .nav-btn {
+      display: none;
+    }
+
+    .nav-menu {
+      height: auto;
+      display: block;
+      position: static;
+      background: transparent;
+      transform: translateY(0);
+
+      ul {
+        display: flex;
+
+        li {
+          margin: 0;
+          font-size: 22px;
+          line-height: 1;
+          font-weight: 400;
+          color: white;
+
+          &:hover {
+            color: $hover;
+          }
+
+          ~ li {
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}

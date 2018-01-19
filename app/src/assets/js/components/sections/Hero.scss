@@ -1,0 +1,22 @@
+.hero {
+  position: relative;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: url("../../../img/bg-hero.jpg") 50% 50% /cover no-repeat, #50e3c2;
+  overflow: hidden;
+  color: white;
+
+  .welcome {
+    margin: 100px auto 0;
+    max-width: 700px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
